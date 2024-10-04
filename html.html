@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet final</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="./html.html"><strong>HTML</strong></a></li>
+                <li><a href="./css.html"><strong>CSS</strong></a></li>
+                <li><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></li>
+                <li><a href="./javascript.html"><strong>JavaScript</strong></a></li>
+                <li><a href="./contact.html"><strong>Contact</strong></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="html-container">
+            <div>
+                <ul class="dropdownmenu-html">
+                    <li><a href="#explication"><strong>Explication</strong></a></li>
+                    <li><a href="#exemple"><strong>Exemple</strong></a></li>
+                    <li><a href="#balises"><strong>Balises</strong></a>
+                        <ul class="ul-cache">
+                            <li><a href="#titres"><strong>Titres</strong></a></li>
+                            <li><a href="#paragraphes"><strong>Paragraphes</strong></a></li>
+                            <li><a href="#liens"><strong>Liens</strong></a></li>
+                            <li><a href="#images"><strong>Images</strong></a></li>
+                            <li><a href="#listes"><strong>Listes</strong></a></li>
+                            <li><a href="#tableaux"><strong>Tableaux</strong></a></li>
+                            <li><a href="#formulaires"><strong>Formulaires</strong></a></li>
+                        </ul>
+                    <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+                </ul>
+            </div>
+            <div class="html-h1">
+                <div>
+                    <img src="./images/html.png" alt="html">
+                    <h1><strong>Initiation au HTML</strong></h1>
+                </div>
+                <article>
+                    <h2 id="explication"><strong>Texte Explicatif : Qu'est-ce que le HTML ?</strong></h2>
+                    <br>
+                    <p>
+                        <strong>Le HTML (HyperText Markup Language) est le langage de base utilisé pour structurer le
+                            contenu
+                            des pages web. Il permet de définir la mise en page d'un site web en organisant les éléments
+                            de
+                            manière hiérarchique. Avec le HTML, on ne programme pas à proprement parler, mais on crée
+                            une
+                            structure logique qui sera interprétée par le navigateur pour afficher du texte, des images,
+                            des
+                            liens, des tableaux, des formulaires, et bien plus encore.
+
+                            HTML est constitué d'une série d'éléments appelés balises. Ces balises entourent le contenu
+                            que
+                            vous voulez afficher et indiquent au navigateur comment ce contenu doit être traité. Chaque
+                            balise HTML a une ouverture (par exemple &lt;p&gt;) et une fermeture (par exemple
+                            &lt;/p&gt;),
+                            bien que
+                            certaines balises puissent être auto-fermantes (par exemple &lt;img /&gt; pour insérer une
+                            image).</strong>
+                    </p>
+                </article>
+                <article>
+                    <h2 id="exemple"><strong>Exemple de base en HTML</strong></h2>
+                    <br>
+                    <p>
+                        <strong>Voici un exemple simple de code HTML qui représente une structure typique d'une page
+                            web:</strong>
+                        <br><br>
+                        <span class="span-doctype">&lt;!DOCTYPE html&gt;</span><br>
+                        <span class="span-html">&lt;html lang="fr"&gt;</span><br>
+                        <span class="span-head">&lt;head&gt;</span><br>
+                        &emsp;&emsp;&lt;meta charset="UTF-8"&gt;<br>
+                        &emsp;&emsp;&lt;title&gt;Ma première page HTML&lt;/title&gt;<br>
+                        <span class="span-head">&lt;/head&gt;</span><br>
+                        <span class="span-body">&lt;body&gt;</span><br>
+                        &emsp;&emsp;&lt;h1&gt;Bienvenue sur ma page&lt;/h1&gt;<br>
+                        &emsp;&emsp;&lt;p&gt;Ceci est un paragraphe de texte qui explique le contenu de la
+                        page.&lt;/p&gt;<br>
+                        &emsp;&emsp;&lt;a href="https://www.example.com"&gt;Cliquez ici pour visiter un autre
+                        site&lt;/a&gt;<br>
+                        <span class="span-body">&lt;/body&gt;</span><br>
+                        <span class="span-html">&lt;/html</span><br>
+                        <br>
+                        <strong>Explication du code :</strong>
+                        <br>
+                        <br>
+                        <span class="span-doctype">&lt;!DOCTYPE html&gt;</span> : Indique au navigateur que le document
+                        est écrit en HTML5, la version actuelle de HTML.<br>
+                        <span class="span-html">&lt;html&gt;</span> : Cette balise contient tout le contenu de la page
+                        web.<br>
+                        <span class="span-head">&lt;head&gt;</span> : C'est ici que sont définies les métadonnées,
+                        telles
+                        que le titre de la page (&lt;title&gt;) ou l'encodage des caractères<br>(&lt;meta
+                        charset="UTF-8"&gt;).<br>
+                        <span class="span-body">&lt;body&gt;</span> : Cette section contient tout le contenu visible de
+                        la
+                        page, comme le texte, les images, les liens, etc.
+                        &lt;h1&gt; : Utilisé pour les titres principaux (niveau 1).<br>
+                        &lt;p&gt; : Balise de paragraphe, utilisée pour afficher du texte.<br>
+                        &lt;a&gt; : Balise de lien hypertexte, qui permet de créer un lien vers une autre page ou un
+                        autre
+                        site.
+                    </p>
+                    <br><br><br>
+                    <img src="./images/HTML/photo-html1.jpg" alt="photo">
+                </article>
+                <article>
+                    <h2 id="balises"><strong>Les balises HTML les plus courantes</strong></h2>
+                    <br>
+                    <p>
+                        Voici quelques balises couramment utilisées en HTML pour créer du contenu :
+                        <br><br>
+                        <a id="titres"><strong>1. <u>Les Titres</u> (&lt;h1&gt; à &lt;h6&gt;)</strong></a>
+                        <br><br>
+                        Les titres sont utilisés pour structurer le contenu de la page. Ils vont du plus important
+                        (&lt;h1&gt;) au moins important (&lt;h6&gt;).
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;h1&gt;Titre principal&lt;/h1&gt;
+                            <br>
+                            &emsp;&emsp;&lt;h2&gt;Sous-titre&lt;/h2&gt;
+                            <br>
+                            &emsp;&emsp;&lt;h3&gt;Sous-sous-titre&lt;/h3&gt;</span>
+                        <br><br><br>
+                        <a id="paragraphes"><strong>2. <u>Les Paragraphes</u> (&lt;p&gt;)</strong></a>
+                        <br><br>
+                        Les balises &lt;p&gt; sont utilisées pour délimiter des blocs de texte, appelés paragraphes.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;p&gt;Ceci est un paragraphe de texte
+                            simple.&lt;/p&gt;</span>
+                        <br><br><br>
+                        <a id="liens"><strong>3. <u>Les Liens</u> (&lt;a&gt;)</strong></a>
+                        <br><br>
+                        La balise &lt;a&gt; est utilisée pour créer des hyperliens. L'attribut href définit l'URL vers
+                        laquelle le lien dirige.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;a href="https://www.example.com"&gt;Visitez notre
+                            site&lt;/a&gt;</span>
+                        <br><br><br>
+                        <a id="images"><strong>4. <u>Les Images</u> (&lt;img&gt;)</strong></a>
+                        <br><br>
+                        La balise &lt;img&gt; permet d'insérer des images. L'attribut src indique le chemin de
+                        l'image, et l'attribut alt fournit une description alternative en cas de problème
+                        d'affichage.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;img src="image.jpg" alt="Description de l'image"
+                            /&gt;</span>
+                        <br><br><br>
+                        <a id="listes"><strong>5. <u>Les Listes</u> (&lt;ul&gt;,&lt;ol&gt;,&lt;li&gt;)</strong></a>
+                        <br><br>
+                        Les listes permettent de structurer des éléments sous forme de liste à puces (&lt;ul&gt;) ou
+                        numérotée (&lt;ol&gt;). Chaque élément de la liste est contenu dans une balise &lt;li&gt;.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;ul&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;li&gt;Premier élément&lt;/li&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;li&gt;Deuxième élément&lt;/li&gt;<br>
+                            &emsp;&emsp;&lt;/ul&gt;<br>
+                            <br>
+                            &emsp;&emsp; &lt;ol&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;li&gt;Premier élément&lt;/li&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;li&gt;Deuxième élément&lt;/li&gt;<br>
+                            &emsp;&emsp;&lt;/ol&gt;</span><br>
+                        <br><br><br>
+                        <a id="tableaux"><strong>6. <u>Les Tableaux</u> (&lt;table&gt;)</strong></a>
+                        <br><br>
+                        Les tableaux permettent d'organiser des données sous forme de colonnes et de lignes. Voici
+                        un exemple simple :
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;table&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;tr&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th&gt;Nom&lt;/th&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th&gt;Âge&lt;/th&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;tr&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Jean&lt;/td&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;25&lt;/td&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;tr&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Marie&lt;/td&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;30&lt;/td&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt;<br>
+                            &emsp;&emsp;&lt;/table&gt;</span><br>
+                        <br><br>
+                        <a id="formulaires"><strong>7. <u>Les Formulaires</u> (&lt;form&gt;)</strong></a>
+                        <br><br>
+                        Les formulaires permettent aux utilisateurs d'envoyer des données à un serveur. Ils
+                        contiennent divers champs de saisie comme des cases à cocher, des boutons radio, des zones
+                        de texte, etc.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;form action="/envoyer" method="post"&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;label for="nom"&gt;Nom :&lt;/label&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;input type="text" id="nom" name="nom" /&gt;<br>
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;label for="email"&gt;Email :&lt;/label&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;input type="email" id="email" name="email" /&gt;<br>
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;input type="submit" value="Envoyer" /&gt;<br>
+                            &emsp;&emsp;&lt;/form&gt;</span><br>
+                    </p>
+                </article>
+                <article>
+                    <h2 id="conclusion"><strong>Conclusion</strong></h2>
+                    <br>
+                    <p>Le HTML est un langage fondamental pour tout site web. Il ne s'agit pas d'un langage de
+                        programmation, mais d'un langage de balisage qui structure les informations. Comprendre et
+                        maîtriser les balises de base du HTML est essentiel pour créer des pages web fonctionnelles et
+                        bien structurées. En combinant le HTML avec d'autres technologies comme CSS (pour le style) et
+                        JavaScript (pour l'interactivité), vous pourrez concevoir des sites web complets et interactifs.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-container">
+            <div class="add">
+                <a href="https://www.google.fr/maps"><img src="./images/add.png" alt="add"></a>
+                <h3>Adresse</h3>
+            </div>
+            <div class="tel">
+                <a href="tel:+33.6.83.78.17.91"><img src=".//images/tel.png" alt="tel"></a>
+                <h3>Téléphone</h3>
+            </div>
+            <div class="mail">
+                <a href="mailto:contact@ri7.fr"><img src=".//images/mail.png" alt="mail"></a>
+                <h3>Mail</h3>
+            </div>
+            <div>
+                <img src=".//images/res.png" alt="réseauxSociaux">
+                <h3>Réseaux sociaux</h3>
+                <ul class="reseau">
+                    <li><a href="https://www.facebook.com/search/top?q=%C3%A9cole%20ri7&locale=fr_FR"><img src=".//images/fb.png" alt="facebook"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/ecole_ri7/"><img src=".//images/insta.png" alt="insta"></a></li>
+                    <li><a href="https://www.linkedin.com/school/ecoleri7/posts/?feedView=all"><img src=".//images/in.png" alt="linkdin"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet final</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="./html.html"><strong>HTML</strong></a></li>
+                <li><a href="./css.html"><strong>CSS</strong></a></li>
+                <li><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></li>
+                <li><a href="./javascript.html"><strong>JavaScript</strong></a></li>
+                <li><a href="./contact.html"><strong>Contact</strong></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="html-container">
+            <div>
+                <ul class="dropdownmenu-html">
+                    <li><a href="#explication"><strong>Explication</strong></a></li>
+                    <li><a href="#exemple"><strong>Exemple</strong></a></li>
+                    <li><a href="#selecteur"><strong>Sélècteur</strong></a>
+                        <ul class="ul-cache">
+                            <li><a href="#element"><strong>Element</strong></a></li>
+                            <li><a href="#classe"><strong>Classe</strong></a></li>
+                            <li><a href="#ID"><strong>ID</strong></a></li>
+                            <li><a href="#groupe"><strong>Groupe</strong></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#courant"><strong>Pus utilisé</strong></a>
+                        <ul class="ul-cache">
+                            <li><a href="#couleur"><strong>Couleur</strong></a></li>
+                            <li><a href="#texte"><strong>Texte</strong></a></li>
+                            <li><a href="#boite"><strong>Boite et Marge</strong></a></li>
+                            <li><a href="#page"><strong>Mise en Page</strong></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#methode"><strong>Méthodes</strong></a>
+                        <ul class="ul-cache">
+                            <li><a href="#interne"><strong>Interne</strong></a></li>
+                            <li><a href="#externe"><strong>Externe</strong></a></li>
+                            <li><a href="#en-ligne"><strong>En Ligne</strong></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+                </ul>
+            </div>
+            <div class="html-h1">
+                <div>
+                    <img src="./images/css.png" alt="html">
+                    <h1><strong>Initiation au CSS</strong></h1>
+                </div>
+                <article>
+                    <h2 id="explication"><strong>Texte Explicatif : Qu'est-ce que le CSS ?</strong></h2>
+                    <br>
+                    <p>
+                        <strong>Le CSS (Cascading Style Sheets), ou feuilles de style en cascade, est un langage utilisé
+                            pour décrire la présentation visuelle des documents HTML. Alors que le HTML est responsable
+                            de la structure du contenu, le CSS détermine l'apparence de ce contenu : couleurs, polices,
+                            mise en page, tailles, marges, etc. Grâce au CSS, vous pouvez transformer une simple page
+                            HTML en une interface esthétiquement agréable et facile à naviguer.<br>Le CSS fonctionne en
+                            associant des styles à des éléments HTML spécifiques, en définissant comment ces éléments
+                            doivent apparaître lorsqu'ils sont rendus par un navigateur. Chaque règle CSS est composée
+                            d'un sélecteur (l'élément auquel le style sera appliqué) et de propriétés avec leurs valeurs
+                            (ce qui détermine l'apparence).
+                        </strong>
+                    </p>
+                </article>
+                <article>
+                    <h2 id="exemple"><strong>Exemple de base en CSS</strong></h2>
+                    <br>
+                    <p>
+                        <strong>Voici un exemple simple de fichier CSS qui modifie l'apparence d'une page HTML
+                            :</strong>
+                        <br><br>
+                        <span class="span-text">&emsp;&emsp;body {<br>
+                            &emsp;&emsp;&emsp;&emsp;background-color: #f0f0f0;<br>
+                            &emsp;&emsp;&emsp;&emsp;font-family: Arial, sans-serif;<br>
+                            &emsp;&emsp;}<br>
+                            <br>
+                            &emsp;&emsp;h1 {<br>
+                            &emsp;&emsp;&emsp;&emsp;color: #333;<br>
+                            &emsp;&emsp;&emsp;&emsp;text-align: center;<br>
+                            &emsp;&emsp;}<br>
+                            <br>
+                            &emsp;&emsp;p {<br>
+                            &emsp;&emsp;&emsp;&emsp;font-size: 16px;<br>
+                            &emsp;&emsp;&emsp;&emsp;color: #666;<br>
+                            &emsp;&emsp;&emsp;&emsp;line-height: 1.5;<br>
+                            &emsp;&emsp;}<br>
+                            <br>
+                            &emsp;&emsp;a {<br>
+                            &emsp;&emsp;&emsp;&emsp;color: #3498db;<br>
+                            &emsp;&emsp;&emsp;&emsp;text-decoration: non<br>
+                            &emsp;&emsp;}<br>
+                            <br><br>
+                            &emsp;&emsp;a:hover {<br>
+                            &emsp;&emsp;&emsp;&emsp;color: #2980b9;<br>
+                            &emsp;&emsp;&emsp;&emsp;text-decoration: underline;<br>
+                            &emsp;&emsp;}</span><br>
+                        <br>
+                        <strong>Explication du code :</strong>
+                        <br>
+                        <br>
+                        body : Sélectionne l'élément
+
+                        &lt;body&gt; et lui applique un fond gris clair et la police Arial.<br>
+                        h1 : Modifie les titres &lt;h1&gt; en les rendant de couleur gris foncé et les centre sur la
+                        page.<br>
+                        p : Stylise les paragraphes &lt;p&gt; en définissant une taille de texte de 16px, une couleur
+                        gris clair et un espacement vertical agréable entre les lignes.<br>
+                        a : Définit la couleur des liens &lt;a&gt; en bleu et supprime le soulignement par défaut.<br>
+                        a:hover : Applique un style supplémentaire lors du survol d'un lien, en
+                        changeant sa couleur et en rétablissant le soulignement.<br>
+                    </p>
+                    <br><br><br>
+                    <img src="./images/CSS/css-expl.png" alt="photo">
+                </article>
+                <article>
+                    <h2 id="selecteur"><strong>Les Sélecteurs CSS les plus courants</strong></h2>
+                    <br>
+                    <p>
+                        Les sélecteurs CSS permettent de cibler les éléments HTML auxquels vous voulez appliquer des
+                        styles. Voici quelques sélecteurs couramment utilisés :
+                        <br><br>
+                        <a id="element"><strong>1. <u>Les Sélecteurs d'Éléments</u></strong></a>
+                        <br><br>
+                        Les sélecteurs d'éléments ciblent directement les balises HTML (comme &lt;p&gt;, &lt;h1&gt;,
+                        &lt;div&gt;, etc.)
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">p {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;color: #333;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br><br>
+                        <a id="classe"><strong>2. <u>Les Sélecteurs de Classe</u> (.)</strong></a>
+                        <br><br>
+                        Les classes permettent de styliser des éléments de manière spécifique et peuvent être appliquées
+                        à plusieurs éléments sur une page. Les classes sont précédées d’un point (.) dans le CSS.
+                        <br><br>
+                        &emsp;&emsp;HTML :
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;p class="important">Ceci est un paragraphe
+                            important.&lt;/p&gt;</span>
+                        <br><br><br>
+                        &emsp;&emsp;CSS :
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">.important {<br>
+                            &emsp;&emsp;&emsp;&emsp;font-weight: bold;<br>
+                            &emsp;&emsp;&emsp;&emsp;color: red;<br>
+                            &emsp;&emsp;}
+                        </span>
+                        <br><br><br>
+                        <a id="ID"><strong>3. <u>Les Sélecteurs d'ID </u> (#)</strong></a>
+                        <br><br>
+                        Les identifiants (ID) sont uniques et ne peuvent être utilisés qu'une seule fois par page. Les
+                        ID sont précédés d’un dièse (#) dans le CSS.
+                        <br><br>
+                        &emsp;&emsp;HTML :
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;h1 id="titre-principal">Bienvenue&lt;/h1&gt;</span>
+                        <br><br>
+                        &emsp;&emsp;CSS :
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">#titre-principal { <br>
+                            &emsp;&emsp;&emsp;&emsp;font-size: 2em;<br>
+                            &emsp;&emsp;&emsp;&emsp;color: #2c3e50;<br>
+                            &emsp;&emsp;}</span>
+                        <br><br><br>
+                        <a id="groupe"><strong>4. <u>Les Sélecteurs de Groupe</u></strong></a>
+                        <br><br>
+                        Vous pouvez appliquer le même style à plusieurs éléments en les regroupant dans une seule règle,
+                        séparés par des virgules.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">h1, h2, h3 {<br>
+                            &emsp;&emsp;&emsp;&emsp;font-family: 'Arial', sans-serif;<br>
+                            &emsp;&emsp;&emsp;&emsp;color: #333;
+                            &emsp;&emsp;}</span>
+                        <br><br><br>
+                    </p>
+                </article>
+                <article>
+                    <h2 id="courant"><strong>Propriétés CSS couramment utilisées</strong></h2>
+                    <br>
+                    <p>
+                        Voici un aperçu des propriétés CSS les plus fréquemment utilisées pour styliser une page web :
+                        <br><br>
+                        <a id="couleur"><strong>1. <u>Propriétés de Couleur</u></strong></a>
+                        <br><br>
+                        color : Définit la couleur du texte.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">p {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;color: #555;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br>
+                        background-color : Définit la couleur de fond d'un élément.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">body {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;background-color: #f9f9f9;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br><br>
+                        <a id="texte"><strong>2. <u>Propriétés de Texte</u></strong></a>
+                        <br><br>
+                        font-size : Détermine la taille du texte.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">h1 {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;font-size: 2.5em;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br>
+                        font-family : Définit la police de caractères.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">body {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;font-family: 'Verdana', sans-serif;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br>
+                        text-align : Aligne le texte horizontalement (par exemple, centré, à gauche, à droite).
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">h1 {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;text-align: center;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br><br>
+                        <a id="boite"><strong>3. <u>Propriétés de Boîte et de Marges</u></strong></a>
+                        <br><br>
+                        padding : Définit l'espace intérieur entre le contenu et les bords d'un élément.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">div {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;padding: 20px;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br>
+                        margin : Définit l'espace extérieur entre un élément et ses voisins.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">div {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;margin: 10px;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br>
+                        border : Ajoute une bordure autour d'un élément.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">p {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;border: 1px solid #ccc;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br><br>
+                        <a id="page"><strong>4. <u>Propriétés de Mise en Page</u></strong></a>
+                        <br><br>
+                        width et height : Définissent la largeur et la hauteur d'un élément.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">div {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;width: 300px;
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;height: 200px;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br>
+                        display : Définit le type d'affichage d'un élément (par exemple, block, inline, flex).
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">a {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;display: block;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br>
+                        position : Gère la position d'un élément sur la page (par exemple, relative, absolute, fixed).
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">div {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;position: absolute;
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;top: 50px;
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;left: 100px;
+                            <br>
+                            &emsp;&emsp;}</span>
+                        <br><br>
+                    </p>
+                </article>
+                <article>
+                    <h2 id="methode"><strong>Les Méthodes pour Appliquer le CSS</strong></h2>
+                    <br>
+                    <p>
+                        Il existe plusieurs façons d'intégrer le CSS dans une page HTML :
+                        <br><br>
+                        <a id="interne"><strong>1. <u>CSS Interne</u></strong></a>
+                        <br><br>
+                        Le CSS interne est placé directement dans le fichier HTML, à l'intérieur de la balise
+                        &lt;style&gt; dans la section &lt;head&gt;.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;head&gt;
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;style&gt;
+                            <br>
+                            &emsp;&emsp;p {<br>
+                            &emsp;&emsp;&emsp;&emsp;color: blue;<br>
+                            &emsp;&emsp;}<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;/style&gt;
+                            <br>
+                            &emsp;&emsp;&lt;/head&gt;</span>
+                        <br><br><br>
+                        <a id="externe"><strong>2. <u>CSS Externe</u></strong></a>
+                        <br><br>
+                        La méthode la plus courante consiste à lier un fichier CSS externe via la balise &lt;link&gt;.
+                        <br><br>
+                        HTML :
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;head&gt;
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;link rel="stylesheet" href="style.css"&gt;
+                            <br>
+                            &emsp;&emsp;&lt;/head&gt;</span>
+                        <br><br>
+                        Fichier style.css :
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">p {
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;color: blue;
+                            <br>
+                            &emsp;&emsp;}</span><br>
+                        <br><br>
+                        <a id="en-ligne"><strong>3. <u>CSS En Ligne</u></strong></a>
+                        <br><br>
+                        Le CSS en ligne est appliqué directement à un élément HTML via l'attribut style. Cependant,
+                        cette méthode est déconseillée car elle mélange structure et présentation.
+                        <br><br>
+                        HTML :
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;p style="color: blue;"&gt;Ceci est un paragraphe en
+                            bleu.&lt;/p&gt;</span>
+                    </p>
+                </article>
+                <article>
+                    <h2 id="conclusion"><strong>Conclusion</strong></h2>
+                    <br>
+                    <p>
+                        Le CSS est un outil puissant qui permet de séparer la présentation d'une page web de sa
+                        structure HTML. En maîtrisant les bases des sélecteurs, des propriétés et des méthodes
+                        d'intégration, vous pourrez facilement personnaliser l'apparence de vos pages web pour offrir
+                        une meilleure expérience utilisateur. Associé au HTML, le CSS forme la base de tout site web
+                        moderne, et une compréhension approfondie de ces deux langages est essentielle pour tout
+                        développeur web.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-container">
+            <div class="add">
+                <a href="https://www.google.fr/maps"><img src="./images/add.png" alt="add"></a>
+                <h3>Adresse</h3>
+            </div>
+            <div class="tel">
+                <a href="tel:+33.6.83.78.17.91"><img src=".//images/tel.png" alt="tel"></a>
+                <h3>Téléphone</h3>
+            </div>
+            <div class="mail">
+                <a href="mailto:contact@ri7.fr"><img src=".//images/mail.png" alt="mail"></a>
+                <h3>Mail</h3>
+            </div>
+            <div>
+                <img src=".//images/res.png" alt="réseauxSociaux">
+                <h3>Réseaux sociaux</h3>
+                <ul class="reseau">
+                    <li><a href="https://www.facebook.com/search/top?q=%C3%A9cole%20ri7&locale=fr_FR"><img src=".//images/fb.png" alt="facebook"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/ecole_ri7/"><img src=".//images/insta.png" alt="insta"></a></li>
+                    <li><a href="https://www.linkedin.com/school/ecoleri7/posts/?feedView=all"><img src=".//images/in.png" alt="linkdin"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

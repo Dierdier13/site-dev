@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet final</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-contact">
+            <a href="tel:+33.6.83.78.17.91">
+                <div class="tel">
+                    <img src=".//images/tel.png" alt="tel">
+                    <p>06 83 78 17 91</p>
+                </div>
+            </a>
+            <div>
+                <nav class="nav-burger">
+                    <div class="burger-icon" id="burger-icon">
+                        &#9776; <!-- Icone burger -->
+                        <ul class="menu" id="menu">
+                            <li class="li-html"><a href="./html.html"><strong>HTML</strong></a></li>
+                            <li class="li-css"><a href="./css.html"><strong>CSS</strong></a></li>
+                            <li class="li-acc"><a href="./index.html"><strong>Accueil</strong></a></li>
+                            <li class="li-js"><a href="./javascript.html"><strong>JavaScript</strong></a></li>
+                            <li class="li-contact"><a href="./contact.html"><strong>Contact</strong></a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+            <a href="mailto:contact@ri7.fr">
+                <div class="mail">
+                    <img src=".//images/mail.png" alt="mail">
+                    <p>contact@ri7.fr</p>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="sec-form">
+            <div>
+                <form action="#" method="get" class="form">
+                    <h2 class="h2-form">Formulaire</h2>
+                    <div class="radio">
+                        <label for="coment"><strong>Questions</strong></label>
+                        <input type="radio" name="type" value="question" id="question">
+                        <label for="coment"><strong>Commentaires</strong></label>
+                        <input type="radio" name="type" value="" id="coment">
+                    </div>
+                    <div class="identity">
+                        <div>
+                            <label for="name"><strong>Nom</strong></label><br>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                            <label for="firstnam"><strong>Prénom</strong></label><br>
+                            <input type="text" id="firstname" name="firstname">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="tel"><strong>Téléphone</strong></label>
+                        <br>
+                        <input type="text" id="tel" name="tel">
+                    </div>
+                    <div>
+                        <label for="mail"><strong>Adresse Mail</strong></label>
+                        <br>
+                        <input type="text" id="mail" name="mail">
+                    </div>
+                    <div>
+                        <label for="commentaire"><strong>Précisez votre demande *</strong></label>
+                        <br>
+                        <textarea name="commentaire" id="commentaire"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <label for="doc"><strong> Je désire recevoir une documentation</strong></label>
+                        <input type="checkbox" id="doc" name="doc" class="checkbox">
+                    </div>
+                    <div class="button">
+                        <button type="reset">Effacer</button>
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <div class="portrait">
+                <div class="contact-simpson">
+                    <article class="simpson">
+                        <div class="simpson-image">
+                            <img src="./images/contact/homer.jpg" alt="chef">
+                        </div>
+                        <div class="dirigeant">
+                            <h3>William Sauvage</h3><br>
+                            <p>Fondateur directeur pédagogique</p>
+                        </div>
+                    </article>
+                    <article class="simpson">
+                        <div class="simpson-image">
+                            <img src="./images/contact/moe.jpg" alt="sous-chef">
+                        </div>
+                        <div class="dirigeant">
+                            <h3>Serge Lopez Vasquez</h3><br>
+                            <p>Directeur associé</p>
+                        </div>
+                    </article>
+                    <article class="simpson">
+                        <div class="simpson-image">
+                            <img src="./images/contact/marge.jpg" alt="secretaire">
+                        </div>
+                        <div class="dirigeant">
+                            <h3>Coralie Soriano</h3><br>
+                            <p>Assistante Administrative</p>
+                        </div>
+                    </article>
+                    <article class="simpson">
+                        <div class="simpson-image">
+                            <img src="./images/contact/barney.jpg" alt="prof">
+                        </div>
+                        <div class="dirigeant">
+                            <h3>Thomas Oliver</h3><br>
+                            <p>Proffeseur</p>
+                        </div>
+                    </article>
+                    <article class="simpson">
+                        <div class="simpson-image">
+                            <img src="./images/contact/flanders.jpg" alt="prof">
+                        </div>
+                        <div class="dirigeant">
+                            <h3>Brendan</h3><br>
+                            <p>Professeur</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="contact-rs">
+                    <ul>
+                        <li><a href="https://www.facebook.com/search/top?q=%C3%A9cole%20ri7&locale=fr_FR"><img
+                                    src=".//images/fb.png" alt="facebook"></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/ecole_ri7/"><img src=".//images/insta.png"
+                                    alt="insta"></a></li>
+                        <li><a href="https://www.linkedin.com/school/ecoleri7/posts/?feedView=all"><img
+                                    src=".//images/in.png" alt="linkdin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./JS/script.js"></script> <!-- Lien vers votre fichier JS -->
+
+</body>

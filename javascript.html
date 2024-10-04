@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet final</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="./html.html"><strong>HTML</strong></a></li>
+                <li><a href="./css.html"><strong>CSS</strong></a></li>
+                <li><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></li>
+                <li><a href="./javascript.html"><strong>JavaScript</strong></a></li>
+                <li><a href="./contact.html"><strong>Contact</strong></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="html-container">
+            <div>
+                <ul class="dropdownmenu-html">
+                    <li><a href="#explication"><strong>Explication</strong></a></li>
+                    <li><a href="#exemple"><strong>Exemple</strong></a></li>
+                    <li><a href="#base"><strong>Bases</strong></a>
+                        <ul class="ul-cache">
+                            <li><a href="#variable"><strong>Element</strong></a></li>
+                            <li><a href="#fonction"><strong>Classe</strong></a></li>
+                            <li><a href="#condition"><strong>Condition</strong></a></li>
+                            <li><a href="#boucle"><strong>Boucle</strong></a></li>
+                            <li><a href="#dom"><strong>DOM</strong></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#evenement"><strong>Evènement</strong></a></li>
+                    <li><a href="#methode"><strong>Méthodes</strong></a>
+                        <ul class="ul-cache">
+                            <li><a href="#interne"><strong>Interne</strong></a></li>
+                            <li><a href="#en-ligne"><strong>En Ligne</strong></a></li>
+                            <li><a href="#externe"><strong>Externe</strong></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+                </ul>
+            </div>
+            <div class="html-h1">
+                <div>
+                    <img src="./images/JS.png" alt="html">
+                    <h1><strong>Initiation au JavaScript</strong></h1>
+                </div>
+                <article>
+                    <h2 id="explication"><strong>Texte Explicatif : Qu'est-ce que le JavaScript ?</strong></h2>
+                    <br>
+                    <p>
+                        <strong>JavaScript est un langage de programmation dynamique utilisé pour rendre les pages web
+                            interactives. Contrairement au HTML qui structure le contenu, et au CSS qui le met en forme,
+                            JavaScript permet d'ajouter de l'interactivité à une page web. Il peut être utilisé pour
+                            réagir aux actions de l'utilisateur, manipuler le contenu HTML et CSS en temps réel, ou
+                            encore interagir avec des serveurs distants pour obtenir et envoyer des données.
+                            <br>
+                            JavaScript est essentiel dans le développement web moderne et est exécuté directement dans
+                            le navigateur web. Grâce à JavaScript, il est possible de créer des éléments dynamiques tels
+                            que des formulaires interactifs, des menus déroulants, des diaporamas, des jeux, et bien
+                            plus encore.</strong>
+                    </p>
+                </article>
+                <article>
+                    <h2 id="exemple"><strong>Exemple de base en JavaScript</strong></h2>
+                    <br>
+                    <p>
+                        <strong>Voici un exemple simple de JavaScript intégré dans une page HTML pour afficher un
+                            message lorsqu'un utilisateur clique sur un bouton :</strong>
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;!DOCTYPE html&gt;<br>
+                            &emsp;&emsp;&lt;html lang="fr"&gt;<br>
+                            &emsp;&emsp;&lt;head&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;meta charset="UTF-8"&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;title&gt;Ma première page HTML&lt;/title&gt;<br>
+                            &emsp;&emsp;&lt;/head&gt;<br>
+                            &emsp;&emsp;&lt;body&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;h1&gt;Bienvenue sur ma page&lt;/h1&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;button onclick="afficherMessage()"&gt;Cliquez
+                            ici&lt;/boutton&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;script"&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function afficherMessage() {<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;alert("Bonjour ! Vous avez cliqué sur le bouton.");<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;/script&gt;<br>
+                            &emsp;&emsp;&lt;/body&gt;<br>
+                            &emsp;&emsp;&lt;/html</span><br>
+                        <br>
+                        <strong>Explication du code :</strong>
+                        <br>
+                        <br>
+                        &lt;button&gt; : Un bouton HTML qui déclenche une action lorsque l'utilisateur clique dessus
+                        grâce à
+                        l'attribut onclick. <br>
+                        &lt;script&gt; : La balise &lt; script &gt; contient le code JavaScript à exécuter. <br>
+                        function afficherMessage(): Une fonction JavaScript définissant une action qui est exécutée lors
+                        du clic sur le bouton.Ici, la fonction déclenche une boîte de dialogue avec un message.
+                    </p>
+                    <br><br><br>
+                    <img src="./images/JS/diagramme.png" alt="photo">
+                </article>
+                <article>
+                    <h2 id="base"><strong>Les Bases du JavaScript</strong></h2>
+                    <br><br><br>
+                    <p>
+                        <a id="variable"><strong>1. <u>Variables</u></strong></a>
+                        <br><br>
+                        Les variables en JavaScript permettent de stocker des valeurs (nombres, chaînes de caractères,
+                        objets, etc.) pour les utiliser plus tard dans votre programme. Les trois mots-clés pour
+                        déclarer une variable sont var, let, et const.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">let nom = "Jean";
+                            <br>
+                            &emsp;&emsp;const age = 30;
+                            <br>
+                            &emsp;&emsp;var ville = "Paris";</span>
+                        <br><br>
+                        let : Utilisé pour déclarer une variable dont la valeur peut changer. <br>
+                        const : Utilisé pour déclarer une constante, c'est-à-dire une valeur qui ne peut pas être
+                        modifiée. <br>
+                        var : Ancienne manière de déclarer une variable (remplacée par let ou const en ES6). <br>
+                        <br><br>
+                        <a id="fonction"><strong>2. <u>Fonctions</u></strong></a>
+                        <br><br>
+                        Les fonctions en JavaScript permettent de regrouper des blocs de code réutilisables. Une
+                        fonction peut prendre des paramètres et retourner un résultat.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">function addition(a, b) { <br>
+                            &emsp;&emsp;&emsp;&emsp;return a + b; <br>
+                            &emsp;&emsp;} <br>
+                            <br>
+                            &emsp;&emsp;let resultat = addition(3, 5); // retourne 8</span>
+                        <br><br><br>
+                        <a id="condition"><strong>3. <u>Conditions</u></strong></a>
+                        <br><br>
+                        Les structures conditionnelles permettent d'exécuter différents blocs de code en fonction de
+                        certaines conditions.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">let age = 18;<br><br>
+                            &emsp;&emsp;if (age >= 18) { <br>
+                            &emsp;&emsp;&emsp;&emsp;console.log("Vous êtes majeur."); <br>
+                            &emsp;&emsp;} else { <br>
+                            &emsp;&emsp;&emsp;&emsp;console.log("Vous êtes mineur."); <br>
+                            &emsp;&emsp;}</span> <br>
+                        <br><br>
+                        <a id="boucle"><strong>4. <u>boucles</u></strong></a>
+                        <br><br>
+                        Les boucles permettent d'exécuter plusieurs fois un bloc de code tant qu'une condition est
+                        remplie.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">for (let i = 0; i &lt; 5; i++) {<br>
+                                &emsp;&emsp;&emsp;&emsp;console.log(i); // Affiche 0, 1, 2, 3, 4<br>
+                                &emsp;&emsp;}</span>
+                                <br><br><br>
+                        <a id="dom"><strong>5. <u>Manipulation du DOM (Document Object Model)</u></strong></a>
+                        <br><br>
+                        Le DOM est une interface de programmation pour les documents HTML et XML. JavaScript permet de
+                        manipuler le DOM pour changer dynamiquement le contenu et la structure d'une page web. Par
+                        exemple, vous pouvez utiliser JavaScript pour modifier du texte, ajouter ou supprimer des
+                        éléments HTML, ou changer des styles CSS directement depuis le script.
+                        <br><br>
+                        Voici comment modifier le contenu d'un élément HTML avec JavaScript :
+                        <br><br>
+                        HTML :
+                        <br><br>
+                        <span class="span-text">&emsp;&emsp;&lt;p id="texte"&gt;Ceci est du texte par
+                            défaut.&lt;/p&gt;<br>
+                            &emsp;&emsp;&lt;button onclick="changerTexte()"&gt;Changer le texte&lt;/button&gt;<br>
+                            &emsp;&emsp;&lt;script&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;function changerTexte() { <br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;document.getElementById("texte").innerHTML = "Le texte a
+                            été modifié!";<br>
+                            &emsp;&emsp;&emsp;&emsp;}<br>
+                            &emsp;&emsp; &lt;/script&gt;</span>
+                        <br><br>
+                        Dans cet exemple, la fonction changerTexte() change le texte à l'intérieur de la balise
+                    <p> lorsque le bouton est cliqué.
+                    </p>
+                </article>
+                <article>
+                    <h2 id="evenement"><strong>Les Événements JavaScript</strong></h2>
+                    <br>
+                    <p>
+                        JavaScript réagit souvent aux actions de l'utilisateur, appelées événements. Ces événements
+                        peuvent inclure des clics, des mouvements de souris, des touches pressées, et bien d'autres
+                        actions.
+                        <br><br>
+                        <strong>Exemple : Intercepter un clic</strong>
+                        <br><br>
+                        Voici un exemple d'utilisation de JavaScript pour intercepter un clic et réagir à cet événement
+                        :
+                        <br><br>
+                        HTML :
+                        <br><br>
+                        <span class="span-text">&emsp;&emsp;&lt;button id="monBouton"&gt;CCliquez-moi&lt;/button&gt;<br>
+                            &emsp;&emsp;&lt;script&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;document.getElementById("monBouton").addEventListener("click", function() {<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;alert("Vous avez cliqué sur le bouton !");<br>
+                            &emsp;&emsp;&emsp;&emsp;});<br>
+                            &emsp;&emsp; &lt;/script&gt;</span>
+                        <br><br>
+                        Dans cet exemple, lorsqu'un utilisateur clique sur le bouton, un message s'affiche via une
+                        alerte.
+                    </p>
+                </article>
+                <article>
+                    <h2 id="methode"><strong>Les Méthodes pour Ajouter JavaScript</strong></h2>
+                    <br>
+                    <p>
+                        JavaScript peut être ajouté à une page de différentes manières :
+                        <br><br>
+                        <a id="externe"><strong>1. <u>JavaScript Externe</u></strong></a>
+                        <br><br>
+                        La meilleure pratique consiste à inclure un fichier JavaScript externe en utilisant la balise
+                        &lt;script&gt; avec l'attribut src.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;head&gt;
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;script src="script.js"&gt;&lt;/script&gt;
+                            <br>
+                            &emsp;&emsp;&lt;/head&gt;</span>
+                        <br><br>
+                        Le fichier script.js contiendra le code JavaScript.
+                        <br><br><br>
+                        <a id="interne"><strong>2. <u>JavaScript Interne</u></strong></a>
+                        <br><br>
+                        Il est possible d'inclure directement du JavaScript dans le fichier HTML à l'intérieur de la
+                        balise &lt;script&gt;.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;script&gt;
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;alert("Bonjour, voici du JavaScript !");
+                            <br>
+                            &emsp;&emsp;&lt;/script&gt;</span>
+                        <br><br><br>
+                        <a id="en-ligne"><strong>3. <u>JavaScript En Ligne</u></strong></a>
+                        <br><br>
+                        Le JavaScript en ligne est utilisé directement dans les éléments HTML avec des événements comme
+                        onclick, bien que cette méthode soit déconseillée car elle mélange la logique et la
+                        présentation.
+                        <br><br>
+                        &emsp;&emsp;<span class="span-text">&lt;button onclick="alert('Ceci est du JavaScript
+                            inline')"&gt;Cliquez-moi&lt;/button&gt;</span>
+                    </p>
+                </article>
+                <article id="conclusion">
+                    <h2><strong>Conclusion</strong></h2>
+                    <br>
+                    <p>JavaScript est un langage puissant qui transforme une page web statique en une interface
+                        dynamique et interactive. Grâce à sa capacité à réagir aux actions de l'utilisateur, à manipuler
+                        le contenu et à interagir avec des serveurs, il est incontournable pour le développement web
+                        moderne. En maîtrisant les bases des variables, des fonctions, des conditions, et des
+                        événements, vous pourrez rapidement créer des pages web interactives et enrichir l'expérience
+                        utilisateur.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-container">
+            <div class="add">
+                <a href="https://www.google.fr/maps"><img src="./images/add.png" alt="add"></a>
+                <h3>Adresse</h3>
+            </div>
+            <div class="tel">
+                <a href="tel:+33.6.83.78.17.91"><img src=".//images/tel.png" alt="tel"></a>
+                <h3>Téléphone</h3>
+            </div>
+            <div class="mail">
+                <a href="mailto:contact@ri7.fr"><img src=".//images/mail.png" alt="mail"></a>
+                <h3>Mail</h3>
+            </div>
+            <div>
+                <img src=".//images/res.png" alt="réseauxSociaux">
+                <h3>Réseaux sociaux</h3>
+                <ul class="reseau">
+                    <li><a href="https://www.facebook.com/search/top?q=%C3%A9cole%20ri7&locale=fr_FR"><img src=".//images/fb.png" alt="facebook"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/ecole_ri7/"><img src=".//images/insta.png" alt="insta"></a></li>
+                    <li><a href="https://www.linkedin.com/school/ecoleri7/posts/?feedView=all"><img src=".//images/in.png" alt="linkdin"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
