@@ -25,6 +25,18 @@
                 <li><a href="./contact.html"><strong>Contact</strong></a></li>
             </ul>
         </nav>
+        <nav class="nav-burger1">
+            <div class="burger-icon" id="burger-icon">
+                &#9776; <!-- Icone burger -->
+                <ul class="menu" id="menu">
+                    <li class="li-html"><a href="./html.html"><strong>HTML</strong></a></li>
+                    <li class="li-css"><a href="./css.html"><strong>CSS</strong></a></li>
+                    <li class="li-acc"><a href="./index.html"><strong>Accueil</strong></a></li>
+                    <li class="li-js"><a href="./javascript.html"><strong>JavaScript</strong></a></li>
+                    <li class="li-contact"><a href="./contact.html"><strong>Contact</strong></a></li>
+                </ul>
+            </div>
+        </nav>
 
     </header>
 
@@ -163,9 +175,9 @@
                         remplie.
                         <br><br>
                         &emsp;&emsp;<span class="span-text">for (let i = 0; i &lt; 5; i++) {<br>
-                                &emsp;&emsp;&emsp;&emsp;console.log(i); // Affiche 0, 1, 2, 3, 4<br>
-                                &emsp;&emsp;}</span>
-                                <br><br><br>
+                            &emsp;&emsp;&emsp;&emsp;console.log(i); // Affiche 0, 1, 2, 3, 4<br>
+                            &emsp;&emsp;}</span>
+                        <br><br><br>
                         <a id="dom"><strong>5. <u>Manipulation du DOM (Document Object Model)</u></strong></a>
                         <br><br>
                         Le DOM est une interface de programmation pour les documents HTML et XML. JavaScript permet de
@@ -208,7 +220,8 @@
                         <br><br>
                         <span class="span-text">&emsp;&emsp;&lt;button id="monBouton"&gt;CCliquez-moi&lt;/button&gt;<br>
                             &emsp;&emsp;&lt;script&gt;<br>
-                            &emsp;&emsp;&emsp;&emsp;document.getElementById("monBouton").addEventListener("click", function() {<br>
+                            &emsp;&emsp;&emsp;&emsp;document.getElementById("monBouton").addEventListener("click",
+                            function() {<br>
                             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;alert("Vous avez cliqué sur le bouton !");<br>
                             &emsp;&emsp;&emsp;&emsp;});<br>
                             &emsp;&emsp; &lt;/script&gt;</span>
@@ -288,20 +301,23 @@
                 <a href="mailto:contact@ri7.fr"><img src=".//images/mail.png" alt="mail"></a>
                 <h3>Mail</h3>
             </div>
-            <div>
+            <div class="rs">
                 <img src=".//images/res.png" alt="réseauxSociaux">
                 <h3>Réseaux sociaux</h3>
                 <ul class="reseau">
-                    <li><a href="https://www.facebook.com/search/top?q=%C3%A9cole%20ri7&locale=fr_FR"><img src=".//images/fb.png" alt="facebook"></a>
+                    <li><a href="https://www.facebook.com/search/top?q=%C3%A9cole%20ri7&locale=fr_FR"><img
+                                src=".//images/fb.png" alt="facebook"></a>
                     </li>
-                    <li><a href="https://www.instagram.com/ecole_ri7/"><img src=".//images/insta.png" alt="insta"></a></li>
-                    <li><a href="https://www.linkedin.com/school/ecoleri7/posts/?feedView=all"><img src=".//images/in.png" alt="linkdin"></a></li>
+                    <li><a href="https://www.instagram.com/ecole_ri7/"><img src=".//images/insta.png" alt="insta"></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/school/ecoleri7/posts/?feedView=all"><img
+                                src=".//images/in.png" alt="linkdin"></a></li>
                 </ul>
             </div>
         </div>
 
     </footer>
-
+    <script src="./JS/script.js"></script> <!-- Lien vers votre fichier JS -->
 </body>
 
 </html>

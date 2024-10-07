@@ -52,6 +52,10 @@ nav {
     margin-right: 50px;
 }
 
+.nav-burger1{
+    display:none
+}
+
 .nav-bar a {
     border: solid white;
     border-radius: 23% 77% 26% 74% / 65% 52% 48% 35%;
@@ -71,6 +75,54 @@ nav {
 
 .nav-bar li {
     display: flex;
+}
+@media screen and (max-width: 700px){
+.nav-bar{
+    display: none;
+}
+
+.rs{
+    display: none
+}
+.nav-burger1{
+    display: flex;
+    margin-right: 20%;
+}
+
+.menu.active .li-html {
+    transform: translate(-50%, -200%);
+    visibility: visible;
+    opacity: 100%;
+    transition-duration: 0.3s;
+}
+
+.menu.active .li-css {
+    transform: translate(180%, -220%);
+    visibility: visible;
+    opacity: 100%;
+    transition-duration: 0.9s;
+}
+
+.menu.active .li-acc {
+    transform: translate(-120%, 0%);
+    visibility: visible;
+    opacity: 100%;
+    transition-duration: 1.5s;
+}
+
+.menu.active .li-js {
+    transform: translate(-30%, -350%);
+    visibility: visible;
+    opacity: 100%;
+    transition-duration: 0.6s;
+}
+
+.menu.active .li-contact {
+    transform: translate(70%, 0%);
+    visibility: visible;
+    opacity: 100%;
+    transition-duration: 1.2s;
+}
 }
 
 .main {
@@ -533,6 +585,10 @@ footer {
     list-style-type: none;
 }
 
+.portrait .contact-rs ul li img{
+height: 50px;
+width: 50px;
+}
 input {
     width: 30%;
     height: 20px;
@@ -567,6 +623,9 @@ button {
 
     .dirigeant {
         margin-left: 0%;
+    }
+    .portrait .contact-simpson .simpson .simpson-image {
+        width: 40%;
     }
 }
 
